@@ -22,7 +22,7 @@
     }
 /* End of Body */
 
-/* Header Content (Question: Should this go above the "body" tag so that it follows a logical structure independent of styling and positioning?) */
+/* Header Content */
     header {
         padding: 20px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -60,8 +60,11 @@
 /* Banner */
     figure{
         position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         height: 800px;
-        width: 100%;
+        width: 1200px;
         margin-bottom: 25px;
         /* background-image: url("../images/digital-marketing-meeting.jpg"); */
         /* background-size: cover;
@@ -92,8 +95,8 @@
         margin-left: 25px;
     }
 
-    /* Alternative Modfier for the sections in main part */
-    .blue-text-field {
+    /* Grouped Modifiers for the sections in main part */
+    .search-engine-optimization,.online-reputation-management,.social-media-marketing {
         margin-bottom: 20px;
         padding: 50px;
         height: 300px;
@@ -102,75 +105,20 @@
         color: #ffffff;
     }
 
+    /* Grouped Modifiers for the images in the sections in the main part */
+    .search-engine-optimization img, .online-reputation-management img,.social-media-marketing img {
+        max-height: 200px;
+    }
 
-    /* Original Modifiers for the sections in main part */
-    .search-engine-optimization,.online-reputation-management {
+    /* Grouped Modifiers for h2 element */
+ 
+    .search-engine-optimization h2, .social-media-marketing h2, .online-reputation-management h2 {
         margin-bottom: 20px;
-        padding: 50px;
-        height: 300px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #0072bb;
-        color: #ffffff;
+        font-size: 36px;
     }
 
-    .online-reputation-management {
-        margin-bottom: 20px;
-        padding: 50px;
-        height: 300px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #0072bb;
-        color: #ffffff;
-    }
-
-    .social-media-marketing {
-        margin-bottom: 20px;
-        padding: 50px;
-        height: 300px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #0072bb;
-        color: #ffffff;
-    }
-
-    /* Alternative Modifier for the images in the sections in main part */
-    .blue-text-field img {
-        max-height: 200px;
-    }
-
-    /* Original Modifiers for the images in the sections in the main part */
-    .search-engine-optimization img {
-        max-height: 200px;
-    }
-
-    .online-reputation-management img {
-        max-height: 200px;
-    }
-
-    .social-media-marketing img {
-        max-height: 200px;
-    }
     
-    /* Alternative Modifier for h2 element */
-    .blue-text-field h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    .search-engine-optimization h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    .online-reputation-management h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    .social-media-marketing h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    /* End of the Main Part */
+/* End of the Main Part */
 
 
 
@@ -186,49 +134,20 @@
         background-color: #2589bd;
     }
 
-    .benefit-lead {
+    /* misc. benefit information */
+    .benefit-lead, .benefit-brand, .benefit-cost  {
         margin-bottom: 32px;
         color: #ffffff;
     }
 
-    .benefit-brand {
-        margin-bottom: 32px;
-        color: #ffffff;
-    }
-
-    .benefit-cost {
-        margin-bottom: 32px;
-        color: #ffffff;
-    }
-
-    .benefit-lead h3 {
+    /* benefit headers */
+     .benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
         margin-bottom: 10px;
         text-align: center;
     }
 
-    .benefit-brand h3 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .benefit-cost h3 {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .benefit-lead img {
-        display: block;
-        margin: 10px auto;
-        max-width: 150px;
-    }
-
-    .benefit-brand img {
-        display: block;
-        margin: 10px auto;
-        max-width: 150px;
-    }
-
-    .benefit-cost img {
+    /* benefit icons */
+    .benefit-lead img, .benefit-cost img, .benefit-brand img {
         display: block;
         margin: 10px auto;
         max-width: 150px;
